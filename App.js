@@ -1,10 +1,14 @@
 import React from 'react';
-import { } from 'react-native';
+import {View } from 'react-native';
 import FlatListDemo from './src/screen/FlatListDemo';
+import ImageFile from './src/screen/ImageFile';
 
 const App = () => {
   return (
-    <FlatListDemo />
+    <View>
+      <FlatListDemo />
+      <ImageFile />
+    </View>
   );
 }
 
