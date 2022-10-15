@@ -1,15 +1,19 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {View } from 'react-native';
-import FlatListDemo from './src/screen/FlatListDemo';
-import ImageFile from './src/screen/ImageFile';
+import { TailwindProvider } from 'tailwindcss-react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './src/screen/HomeScreen';
 
-const App = () => {
+const Stack = createStackNavigator();
+export default function App() {
   return (
-    <View>
-      <FlatListDemo />
-      <ImageFile />
-    </View>
+    <NavigationContainer>
+      <TailwindProvider>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={HomeScreen} />
+        </Stack.Navigator>
+      </TailwindProvider>
+    </NavigationContainer>
   );
 }
-
-export default App;
