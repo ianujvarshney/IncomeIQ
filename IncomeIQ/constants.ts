@@ -1,4 +1,9 @@
 export const categoryColors: { [key: string]: string } = {
+  white:'#fff',
+  black:'#000',
+  primary:"#007260",
+  secondary:"#39B68D",
+  grey:"#cccc",
   Groceries: "#FFD700", // Gold
   Rent: "#FF6347", // Tomato
   Salary: "#32CD32", // LimeGreen

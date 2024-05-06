@@ -6,6 +6,9 @@ import { Asset } from "expo-asset";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import Home from "./screens/Home";
+import Welcome from "./screens/Welcome";
+import Login from "./screens/Login";
+import Signup from "./screens/Signup";
 
 const Stack = createNativeStackNavigator();
 
@@ -52,7 +55,12 @@ export default function App() {
         }
       >
         <SQLiteProvider databaseName="mySQLiteDB.db" useSuspense>
-          <Stack.Navigator>
+          <Stack.Navigator initialRouteName="Welcome">
+          <Stack.Screen 
+              name="Welcome"
+              component={Welcome}
+              options={{headerShown:false}}
+            />  
             <Stack.Screen
               name="Home"
               component={Home}
@@ -60,6 +68,16 @@ export default function App() {
                 headerTitle: "IncomeIQ",
                 headerLargeTitle: true,
               }}
+            />
+            <Stack.Screen 
+              name="Login"
+              component={Login}
+              options={{headerShown:false}}
+            /> 
+            <Stack.Screen 
+            name="Signup"
+            component={Signup}
+            options={{headerShown:false}}
             />
           </Stack.Navigator>
         </SQLiteProvider>
