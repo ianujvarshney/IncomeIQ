@@ -24,3 +24,6 @@ Manage your income effortlessly with IncomeIQ - the ultimate income tracking app
 1. Clone the repository:
    ```bash
    git clone https://github.com/ianujvarshney/IncomeIQ.git
+
+
+2. Replace `${}` with the actual link to the logo image. Also, make sure to replace `#` in the links to the App Store and Google Play Store with the actual links to your app on these platforms.

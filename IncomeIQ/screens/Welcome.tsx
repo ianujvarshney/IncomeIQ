@@ -79,15 +79,15 @@ export default function Welcome({ navigation }) {
                     />
                     {/*content*/}
                     <View style={{ paddingHorizontal: 22, position: 'absolute', top: 400, width: "100%" }}>
-                        <Text style={{ fontSize: 50, fontWeight: 800, color: categoryColors.white }}>Let's Get</Text>
-                        <Text style={{ fontSize: 46, fontWeight: 800, color: categoryColors.white }}>Started</Text>
+                        <Text style={{ fontSize: 50, fontWeight: '800', color: categoryColors.white }}>Let's Get</Text>
+                        <Text style={{ fontSize: 46, fontWeight: '800', color: categoryColors.white }}>Started</Text>
                         <View style={{ marginVertical: 22 }}>
-                            <Text style={{ color: categoryColors.white, marginVertical: 4 }}>connect with each other with chatting</Text>
-                            <Text style={{ fontSize: 16, color: categoryColors.white }}>Calling, Enjoy Safe and private texting</Text>
+                            <Text style={{ color: categoryColors.white, marginVertical: 4 }}>Track, Budget, Thrive: Your Income, Your Expense, Your App!</Text>
+                            <Text style={{ fontSize: 16, color: categoryColors.white }}>Building Bonds Through Every Message Sent!</Text>
                         </View>
                         <Button title="Join Now" onPress={() => navigation.navigate("Signup")} style={{ marginTop: 22, width: "100%" }} />
                         <View style={{ flexDirection: "row", marginTop: 12, justifyContent: 'center' }}>
-                            <Text style={{ fontSize: 16, color: categoryColors.white }}>Already have an account?</Text>
+                            <Text style={{ fontSize: 16, color: categoryColors.white }}>Already have an account ?</Text>
                             <Pressable onPress={() => navigation.navigate("Login")}>
                                 <Text style={{ fontSize: 16, color: categoryColors.white, fontWeight: "bold", marginLeft: 4 }}>Login</Text>
                             </Pressable>
